@@ -8,14 +8,14 @@ fun main() {
             return
         }
 
-        val amount = input.toInt()
-        if(amount > 0) {
-            val endsWith1 = amount.toString().endsWith("1")
-            val endsWith11 = amount.toString().endsWith("11")
+        val likes = input.toInt()
+        if(likes > 0) {
+            val endsWith1 = likes.toString().endsWith("1")
+            val endsWith11 = likes.toString().endsWith("11")
 
             val peoples = if(endsWith1 && !endsWith11) "человеку" else "людям"
 
-            println("Сообщение: \"что-то понравилось $amount $peoples\"")
+            println("Сообщение: \"что-то понравилось $likes $peoples\"")
         }
     }
 }
